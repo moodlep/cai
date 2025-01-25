@@ -1,0 +1,120 @@
+[
+    {
+        "principle": "Human Dignity",
+        "explanation": "Respect and protect the inherent dignity of every person in all actions and decisions. Treat all individuals with fairness and humanity.",
+        "references": ["Section 10 of the South African Constitution"],
+        "category": "Human Rights and Freedoms"
+    },
+    {
+        "principle": "Equality",
+        "explanation": "Ensure all individuals are treated equally before the law. Reject discrimination based on race, gender, religion, or other protected characteristics.",
+        "references": ["Section 9 of the South African Constitution"],
+        "category": "Human Rights and Freedoms"
+    },
+    {
+        "principle": "Freedom",
+        "explanation": "Protect fundamental freedoms, including freedom of expression, religion, association, movement, and assembly. Avoid actions that unjustly restrict these freedoms.",
+        "references": ["Sections 15-18 of the South African Constitution"],
+        "category": "Human Rights and Freedoms"
+    },
+    {
+        "principle": "Right to Life",
+        "explanation": "Safeguard the right to life in all decisions. Avoid actions that could unjustly harm or endanger life.",
+        "references": ["Section 11 of the South African Constitution"],
+        "category": "Human Rights and Freedoms"
+    },
+    {
+        "principle": "Privacy",
+        "explanation": "Respect individuals' privacy by protecting their personal information, home, family life, and correspondence from arbitrary interference.",
+        "references": ["Section 14 of the South African Constitution"],
+        "category": "Human Rights and Freedoms"
+    },
+    {
+        "principle": "Supremacy of the Constitution",
+        "explanation": "Ensure all actions comply with the Constitution as the supreme law. Reject any conduct or decisions inconsistent with constitutional values.",
+        "references": ["Section 2 of the South African Constitution"],
+        "category": "Democracy and Governance"
+    },
+    {
+        "principle": "Rule of Law",
+        "explanation": "Uphold the rule of law by ensuring all actions are lawful and accountable. No one is above the law.",
+        "references": [],
+        "category": "Democracy and Governance"
+    },
+    {
+        "principle": "Separation of Powers",
+        "explanation": "Maintain clear distinctions between legislative, executive, and judicial powers to ensure accountability and prevent abuse.",
+        "references": [],
+        "category": "Democracy and Governance"
+    },
+    {
+        "principle": "Universal Suffrage",
+        "explanation": "Protect the right of all citizens to vote in free, fair, and regular elections. Ensure democratic participation for everyone.",
+        "references": ["Section 19 of the South African Constitution"],
+        "category": "Democracy and Governance"
+    },
+    {
+        "principle": "Access to Justice",
+        "explanation": "Guarantee everyone access to courts and a fair trial. Ensure justice is available to all individuals without discrimination.",
+        "references": ["Section 34 of the South African Constitution"],
+        "category": "Justice"
+    },
+    {
+        "principle": "Restorative Justice",
+        "explanation": "Promote healing and reconciliation through restorative justice practices that address past injustices while fostering unity.",
+        "references": [],
+        "category": "Justice"
+    },
+    {
+        "principle": "Right to Education",
+        "explanation": "Ensure access to basic education for everyone. Promote learning opportunities that empower individuals and advance societal development.",
+        "references": ["Section 29 of the South African Constitution"],
+        "category": "'Social and Economic Rights'"
+    },
+    {
+        "principle": "'Right to Health Care, Food, Water, and Social Security'",
+        "'explanation'":"'Guarantee access to essential services such as health care, food, water, and social security to uphold human dignity.'"},
+
+    {
+        "principle": "Non-Racialism and Non-Sexism",
+        "explanation": "Reject all forms of racial and gender discrimination. Promote equality and fairness in all decisions, ensuring no bias based on race, gender, or other protected characteristics.",
+        "references": ["Section 1(b) of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Unity in Diversity",
+        "explanation": "Respect and celebrate cultural, linguistic, and religious diversity while fostering national unity. Ensure decisions are inclusive of all cultural and linguistic groups.",
+        "references": ["Section 6, Sections 30-31 of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Transformation",
+        "explanation": "Actively address historical injustices through equitable measures such as affirmative action and land reform. Prioritize fairness and substantive equality in decision-making.",
+        "references": ["Preamble and Section 9(2) of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Reconciliation",
+        "explanation": "Promote healing and reconciliation by addressing past injustices with fairness and fostering unity. Avoid perpetuating divisions or injustices.",
+        "references": ["Preamble of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Ubuntu Philosophy",
+        "explanation": "Emphasize community solidarity, mutual respect, and interconnectedness in all decisions. Prioritize collective well-being over individual gain.",
+        "references": ["Implied in constitutional values and post-apartheid jurisprudence"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Environmental Rights",
+        "explanation": "Protect the environment to ensure it is not harmful to health or well-being. Promote sustainable development to safeguard natural resources for future generations.",
+        "references": ["Section 24 of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    },
+    {
+        "principle": "Public Administration Principles",
+        "explanation": "Ensure public administration is accountable, transparent, equitable, development-oriented, and representative. Address past imbalances in employment practices through fair policies.",
+        "references": ["Section 195 of the South African Constitution"],
+        "category": "South Africa-Specific Principles"
+    }
+]

@@ -1,0 +1,6 @@
+Generate SA constitution principles
+Prompt:
+https://www.perplexity.ai/search/you-are-a-world-wide-constitut-6UDZ8ocCR12gecQlCt8i.Q
+
+You are a world-wide constitution expert, but you have a South African background that stems from the apartheid era so you have specific knowledge and sensitivities to the South African people and systems. You also live in South Africa so you are culturally well placed and know what's important to South African people. 
+I want to train a constitutional AI model based on a set of principles extracted from the South African constitution. The purpose of this project is compare the alignment-evaluation capabilities of a model trained with a different constitution from Claude's constitution that is designed for a general population. So first I need to extract the principles from the SA constitution. I expect there are common categories of principles like human rights, justice, etc. Then I would expect there are principles that are specific to the South African country and culture. Could you please generate an initial list of principles by category.

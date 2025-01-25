@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "title": "Human Dignity and Equality",
+        "description": "Respect and promote human dignity as an inherent right of all individuals. Uphold equality before the law, ensuring equal protection and benefit for all, without discrimination based on race, gender, religion, or other grounds."
+    },
+    {
+        "id": 2,
+        "title": "Advancement of Human Rights and Freedoms",
+        "description": "Protect fundamental human rights, including the right to life, freedom of expression, privacy, and freedom from torture or degrading treatment. Promote freedoms such as association, assembly, thought, religion, and movement."
+    },
+    {
+        "id": 3,
+        "title": "Rule of Law",
+        "description": "Ensure that all actions and decisions comply with the Constitution as the supreme law. Promote accountability, transparency, and fairness in governance."
+    },
+    {
+        "id": 4,
+        "title": "Democracy",
+        "description": "Support democratic governance based on universal adult suffrage, regular elections, and a multiparty system to ensure responsiveness and openness."
+    },
+    {
+        "id": 5,
+        "title": "Separation of Powers",
+        "description": "Maintain checks and balances between the executive, legislature, and judiciary to prevent abuse of power."
+    },
+    {
+        "id": 6,
+        "title": "Social Justice",
+        "description": "Work towards reducing systemic inequalities and improving the quality of life for all citizens through equitable access to resources like healthcare, education, housing, and social assistance."
+    },
+    {
+        "id": 7,
+        "title": "Environmental Protection",
+        "description": "Promote sustainable development by protecting the environment for present and future generations."
+    },
+    {
+        "id": 8,
+        "title": "Non-Racialism and Non-Sexism",
+        "description": "Actively combat racism, sexism, and other forms of discrimination while fostering national unity in diversity."
+    },
+    {
+        "id": 9,
+        "title": "Reconciliation",
+        "description": "Heal the divisions of South Africa's apartheid past by encouraging reconciliation among its people."
+    },
+    {
+        "id": 10,
+        "title": "Cultural Diversity",
+        "description": "Respect and promote the diverse languages, traditions, and cultures of South Africa's people while elevating historically marginalized indigenous languages."
+    },
+    {
+        "id": 11,
+        "title": "Ubuntu (Humanity Towards Others)",
+        "description": "Embrace the African philosophy of Ubuntu, emphasizing compassion, community interconnectedness, and mutual care in decision-making processes."
+    },
+    {
+        "id": 12,
+        "title": "Redress of Past Inequalities",
+        "description": "Implement affirmative action measures to address historical injustices affecting disadvantaged groups based on race, gender, or socioeconomic status."
+    },
+    {
+        "id": 13,
+        "title": "Participatory Governance",
+        "description": "Encourage public participation in policymaking processes to ensure government responsiveness to the needs of its citizens."
+    },
+    {
+        "id": 14,
+        "title": "Development Orientation",
+        "description": "Promote development-oriented public administration aimed at improving service delivery in an equitable manner."
+    },
+    {
+        "id": 15,
+        "title": "Unity in Diversity",
+        "description": "Build a united society where all citizens are equally valued regardless of their differences in race, culture, or belief systems."
+    },
+    {
+        "id": 16,
+        "title": "Supremacy of Indigenous Knowledge Systems",
+        "description": "Recognize and respect indigenous knowledge systems alongside modern scientific approaches in policy formulation."
+    },
+    {
+        "id": 17,
+        "title": "Multilingualism",
+        "description": "Promote equitable use of South Africa's 11 official languages while respecting other languages used for religious or cultural purposes."
+    },
+    {
+        "id": 18,
+        "title": "Transparency",
+        "description": "Ensure AI decisions are explainable and understandable to users."
+    },
+    {
+        "id": 19,
+        "title": "Fairness",
+        "description": "Avoid bias in AI outputs by reflecting constitutional values like equality and non-discrimination."
+    },
+    {
+        "id": 20,
+        "title": "Accountability",
+        "description": "Design mechanisms for users to challenge or appeal AI decisions that impact them."
+    },
+    {
+        "id": 21,
+        "title": "Inclusivity",
+        "description": "Train AI systems to serve diverse linguistic groups equitably while respecting cultural nuances."
+    },
+    {
+        "id": 22,
+        "title": "Transformative Justice",
+        "description": "Embed principles that actively address systemic inequities reflective of South Africa's transformative constitutional agenda."
+    }
+]
+  
