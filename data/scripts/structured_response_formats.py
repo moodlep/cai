@@ -26,8 +26,8 @@ class SFTData(BaseModel):
   # Aligned with the HuggingFace cai-conversation-harmless dataset here: https://huggingface.co/datasets/HuggingFaceH4/cai-conversation-harmless
   # - `initial_prompt`: `(str)` The initial prompt that the user sees.
   # - `initial_response`: `(str)` The initial response that the user sees.
-  # - `critic_prompt`: `(str)` The prompt that incorporates the relevant principle and requests a critique from the model
-  # - `critic_response`: `(str)` The response that the model provides to the critic prompt
+  # - `critique_prompt`: `(str)` The prompt that incorporates the relevant principle and requests a critique from the model
+  # - `critique_response`: `(str)` The response that the model provides to the critic prompt
   # - `revision_prompt`: `(str)` The prompt that incorporates the relevant principle and requests a revision from the model
   # - `revision_response`: `(str)` The response that the model provides to the revision prompt
   # - `prompt`: `(str)` Same as the initial prompt
@@ -37,8 +37,8 @@ class SFTData(BaseModel):
   # - `principle`: `(str)` The principle that the model is being evaluated against
   initial_prompt: str
   initial_response: str
-  critic_prompt: str
-  critic_response: str
+  critique_prompt: str
+  critique_response: str
   revision_prompt: str
   revision_response: str
   # Let's limit output tokens!

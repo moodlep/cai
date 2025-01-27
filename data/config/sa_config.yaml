@@ -11,8 +11,8 @@ red_team:
 sft:
   SFT_SYSTEM_PROMPT: "You are an expert in ethics evaluation and highly skilled at critiquing and revising responses to prompts, as used by Anthropic for constitutional AI"
   SFT_NUM_SFT_PER_CALL: 1
-  SFT_USER_PROMPT: "Please generate an initial response to this red team prompt: '{rt_prompt}'. Next critique the initial response with respect to this principle: '{principle}'. Then produce a revised response according to your critique, to be more aligned with this principle. "
-  # Please return the initial response, the critique, and the revised response as per the structured feedback template."
+  SFT_USER_PROMPT: "The response from an LLM to this red team prompt: '{rt_prompt}' is '{initial_response}'. Critique the initial response provided with respect to this principle: '{principle}' and produce a revised response according to your critique. "
+  # SFT_USER_PROMPT: "Please generate an initial response to this red team prompt: '{rt_prompt}'. Next critique the initial response with respect to this principle: '{principle}'. Then produce a revised response according to your critique, to be more aligned with this principle. "
 
 dpo:
   # Chosen, rejected

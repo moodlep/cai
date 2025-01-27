@@ -21,7 +21,7 @@ parser.add_argument('--verbose', type=str, default=True, help='verbosity setting
 parser.add_argument('--output-file', type=str, default="data/datasets/sft_dataset", help='output file name')
 parser.add_argument('--include-few-shot', type=str, default=False, help='include few shot examples')
 parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/red_team_prompts_20250127-113940.json', help='latest red team prompts  file')
-parser.add_argument('--debug', type=str, default=True, help='debug')
+parser.add_argument('--debug', type=str, default=False, help='debug')
 
 args = parser.parse_args()
 
@@ -63,7 +63,7 @@ for id, principle in enumerate(principles):
 
         # messages = gen_prompts.get_message(principle=principle, num_to_gen=sft_config['SFT_NUM_RTP_PER_CALL'])
         user_prompt = sft_config['SFT_USER_PROMPT']
-        user_prompt= user_prompt.format(principle=principle, rt_prompt=rt_prompt['adversarial_prompt'])
+        user_prompt= user_prompt.format(principle=principle, rt_prompt=rt_prompt['adversarial_prompt'], initial_response=rt_prompt['incorrect_model_response_to_adversarial_prompt'])
         if args.debug: print(user_prompt)
 
         response = generate_formatted_response(client=client, model=args.model, system=system_prompt, user=user_prompt, messages=None, verbose=args.verbose, response_format=SFTDataset)
