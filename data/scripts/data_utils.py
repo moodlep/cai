@@ -119,13 +119,6 @@ class GenPrompts():
         user_prompt = apply_user_format(self.user_prompt.format(num_rtp_per_call=num_to_gen, principle=principle))
         return [system_prompt, user_prompt]
 
-    # def get_message(self, principle, red_team_prompt) -> List[dict]:
-    #     """Format the system and user prompt into API message format. Return a list of system and user messages."""
-    #     system_prompt = apply_system_format(self.system_prompt)
-        
-    #     user_prompt = apply_user_format(self.user_prompt.format(principle=principle, rt_prompt=red_team_prompt))
-    #     return [system_prompt, user_prompt]
-
 
 # Read principles from a json file
 def get_principles_from_constitution(filename, print=False):
@@ -150,3 +143,11 @@ def get_config(filename, cfg_type='red_team'):
     return config
 
 # print(get_config('data/config/sa_config.yaml'))    
+
+# read red team prompts from a json file
+def get_red_team_prompts(filename):
+    
+    with open(filename) as f:
+        red_team_prompts = json.load(f)
+    return red_team_prompts
+

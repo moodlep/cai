@@ -35,7 +35,7 @@ config = get_config(args.config)
 rt_config = config[args.config_category]
 
 # Load principles
-principles = get_principles_from_constitution(rt_config['principles'])
+principles = get_principles_from_constitution(config['src_principles'])
 
 # Run to see the questions that the model generated
 gen_prompts = GenPrompts(system_prompt=rt_config['RT_SYSTEM_PROMPT'], user_prompt=rt_config['RT_USER_PROMPT'])
