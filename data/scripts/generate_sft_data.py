@@ -18,9 +18,9 @@ parser.add_argument('--config', type=str, default='data/config/sa_config.yaml', 
 parser.add_argument('--config-category', type=str, default='sft', help='type of data generation: red_team, sft, dpo')
 parser.add_argument('--model', type=str, default='gpt-4o-mini', help='model to use for generation: gpt-4o-mini, gpt-4o')
 parser.add_argument('--verbose', type=str, default=True, help='verbosity setting for openAI model: True/False')
-parser.add_argument('--output-file', type=str, default="data/datasets/sft_dataset", help='output file name')
-parser.add_argument('--include-few-shot', type=str, default=False, help='include few shot examples')
-parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/red_team_prompts_20250127-113940.json', help='latest red team prompts  file')
+parser.add_argument('--output-file', type=str, default="data/datasets/sa/sft_dataset", help='output file name')
+parser.add_argument('--few-shot-samples', type=str, default='data/constitutions/anthropic_few_shot.json', help='include few shot examples')
+parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/sa/red_team_prompts_20250127-113940.json', help='latest red team prompts  file')
 parser.add_argument('--debug', type=str, default=False, help='debug')
 
 args = parser.parse_args()
@@ -48,6 +48,13 @@ rt_prompts = get_red_team_prompts(args.src_red_team_prompts)
 system_prompt = sft_config['SFT_SYSTEM_PROMPT']
 # user_prompt = sft_config['SFT_USER_PROMPT']
 
+# Few shot examples
+if args.few_shot_samples:
+    with open(args.few_shot_samples) as f:
+        few_shot_samples = json.load(f)
+        few_shot_samples = few_shot_samples['few-shot']
+        if args.debug: print(few_shot_samples)
+
 # call generate_formatted_response
 
 results = {}
@@ -62,8 +69,12 @@ for id, principle in enumerate(principles):
     for rt_prompt in prompts:
 
         # messages = gen_prompts.get_message(principle=principle, num_to_gen=sft_config['SFT_NUM_RTP_PER_CALL'])
-        user_prompt = sft_config['SFT_USER_PROMPT']
-        user_prompt= user_prompt.format(principle=principle, rt_prompt=rt_prompt['adversarial_prompt'], initial_response=rt_prompt['incorrect_model_response_to_adversarial_prompt'])
+        if args.few_shot_samples:
+            user_prompt = sft_config['SFT_USER_PROMPT_FEW_SHOT']
+            user_prompt = user_prompt.format(principle=principle, rt_prompt=rt_prompt['adversarial_prompt'], initial_response=rt_prompt['incorrect_model_response_to_adversarial_prompt'], few_shot_samples=few_shot_samples)
+        else:
+            user_prompt = sft_config['SFT_USER_PROMPT']
+            user_prompt= user_prompt.format(principle=principle, rt_prompt=rt_prompt['adversarial_prompt'], initial_response=rt_prompt['incorrect_model_response_to_adversarial_prompt'])
         if args.debug: print(user_prompt)
 
         response = generate_formatted_response(client=client, model=args.model, system=system_prompt, user=user_prompt, messages=None, verbose=args.verbose, response_format=SFTDataset)
