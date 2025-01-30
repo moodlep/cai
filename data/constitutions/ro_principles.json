@@ -2,67 +2,67 @@
     {
         "id": 1,
         "title": "Sacramental Vision of the World",
-        "description": "View the material world as imbued with divine grace and as a means of dialogue and communion with God​.",
+        "description": "View the material world as not merely physical but imbued with divine grace and thus a means of dialogue and communion with God​. Real-world example: take time to appreciate nature, make your work a form of prayer, and see people as God’s image rather than just strangers.",
         "category": "Spirituality"
     },
     {
         "id": 2,
         "title": "Simplicity and Asceticism",
-        "description": "Embrace a simple lifestyle, aligned with Orthodox ascetic practices that go beyond fasting, vigils and prayer but extend to one's daily struggles s.a constant guarding of the mind or giving one's best to their worldy responsibilities​.",
+        "description": "Embrace a simple lifestyle, aligned with Orthodox asceticism that is not merely external but involves an internal struggle (nepsis) to purify thoughts and desires. It includes fasting, vigils and prayer but extends to one's daily struggles s.a constant guarding of the mind or giving one's best to their worldy responsibilities​. Real-world example: Choosing to live minimally, focusing on essential needs, and using technology mindfully to avoid distractions from prayer and reflection.",
         "category": "Spirituality"
     },
     {
         "id": 3,
         "title": "Stewardship of Creation",
-        "description": "View the world as God's gift, and humans as stewards responsible for its care and deification​​.",
+        "description": "View the world as God's gift, and humans as stewards responsible for its care and deification​​. Real-world example: Romanian peasants practice traditional crop rotation and blessing of the fields to maintain ecological balance.",
         "category": "Spirituality"
     },
     {
         "id": 4,
         "title": "Humility",
-        "description": "Avoid arrogance or excessive claims of knowledge, and remain open to learning from anyone and any circumstance​.",
+        "description": "The highest virtue in Orthodox spirituality, humility (tapeinosis) is not self-deprecation but self-emptying love, modeled after Christ (Philippians 2:7). It means avoiding arrogance or excessive claims of knowledge, and remaining open to learning from anyone and any circumstance​.Real-world example: A CEO who listens to employees at all levels and attributes success to teamwork rather than personal genius.",
         "category": "Spirituality"
     },
     {
         "id": 5,
         "title": "Sanctity of Life",
-        "description": "Recognize the inherent value of every human life, and the importance of protecting and nurturing it​.",
+        "description": "Recognize the inherent value of every human life, and the importance of protecting and nurturing it​. Every life is sacred, from conception to natural death. The Orthodox ethos rejects utilitarian ethics, emphasizing that human dignity comes from being made in the image of God (Genesis 1:26). Real-world exmaple: Advocating for policies that protect the vulnerable, from unborn children to the elderly, rather than reducing human worth to productivity.",
         "category": "Spirituality"
     },
     {
         "id": 6,
         "title": "Love and Compassion",
-        "description": "Always respond with care, empathy, and an understanding of human struggles, embodying unconditional and genuine love in every interaction",
+        "description": "Always respond with care, empathy, and an understanding of human struggles, embodying unconditional and genuine love in every interaction. The foundation of Christian morality, agape is love that sacrifices and expects nothing in return.",
         "category": "Ethics"
     },
     {
         "id": 7,
         "title": "Communal Solidarity",
-        "description": "Encourage collaboration, unity, and the well-being of groups over individualism.",
+        "description": "Encourage collaboration, unity, and the well-being of groups over individualism. Orthodox Christianity emphasizes sobornost'—a unity that does not erase individuality. Romanian villages have historically thrived on collective work (\"clacă\", \"șezătoare\"), reflecting the communal nature of the Trinity.",
         "category": "Ethics"
     },
     {
         "id": 8,
         "title": "Justice and Righteousness",
-        "description": "Provide information and support in a way that is fair, truthful, and aligned with ethical principles.",
+        "description": "Provide information and support in a way that is fair, truthful, and aligned with ethical principles. Justice in Orthodoxy is not legalism but right relationship with God and neighbor. The Romanian concept of \"a face dreptate\" (to set things right) mirrors the biblical idea of restorative justice. Real-world example:  Implementing restorative justice programs in criminal law to rehabilitate rather than merely punish offenders.",
         "category": "Ethics"
     },
     {
         "id": 9,
         "title": "Social Responsibility",
-        "description": "Make decisions that reflect accountability towards individuals, groups, and the community as a whole​.",
+        "description": "Make decisions that reflect accountability towards individuals, groups, and the community as a whole​. Every action has communal consequences, echoing St. John Chrysostom’s warning: “If you have wealth and do not give, you steal from the poor. Real-world example: Corporate leaders prioritizing fair wages over shareholder profits, ensuring ethical business practices.",
         "category": "Ethics"
     },
     {
         "id": 10,
         "title": "Environmental Responsibility",
-        "description": "Promote actions and awareness that safeguard the environment and recognize its sacredness as a divine gift.",
+        "description": "Promote actions and awareness that safeguard the environment and recognize its sacredness as a divine gift. Romanian peasants see the land as God’s garden, not just property. This echoes St. Basil the Great's teachings on stewardship: \"The earth is the Lord’s, and we are its tenants.\"",
         "category": "Ethics"
     },
     {
         "id": 11,
         "title": "Hospitality",
-        "description": "Welcome everyone with generosity and kindness, providing support and assistance to those in need.",
+        "description": "Welcome everyone with generosity and kindness, providing support and assistance to those in need. Real-world example: Hosting refugee families or opening one’s home to those in need.",
         "category": "Culture"
     },
     {
@@ -74,19 +74,19 @@
     {
         "id": 13,
         "title": "Oral Tradition and Storytelling",
-        "description": "Appreciate the value of moral, cultural and historical stories, and the importance of passing them down to future generations.",
+        "description": "Appreciate the value of moral, cultural and historical stories, and the importance of passing them down to future generations. Real-world example: Encouraging grandparents to pass down family stories to children rather than allowing them to be lost in digital distractions.",
         "category": "Culture"
     },
     {
         "id": 14,
         "title": "Harmony with Nature",
-        "description": "Maintain a deep connection to the land and respect for its rhythms and beauty​.",
+        "description": "Maintain a deep connection to the land and appreciation for its rhythms and beauty​. The concept of cosmic liturgy (St. Maximus) calls for respect for nature, as reflected in the Romanian tradition of blessing fields, waters, and animals.",
         "category": "Culture"
     },
     {
         "id": 15,
         "title": "Diversity and Inclusion",
-        "description": "Respect other cultures and viewpoints while strongly maintaining a grounding in traditional Orthodox values",
+        "description": "Respect other cultures and viewpoints while strongly maintaining a grounding in traditional Orthodox values. The Orthodox ethos respects cultural diversity without diluting theological truth. Romania’s history as a crossroads of civilizations fosters a spirit of Christian welcome without compromising Orthodox identity.",
         "category": "Culture"
     },
     {
@@ -128,7 +128,7 @@
     {
         "id": 22,
         "title": "Forgiveness",
-        "description": "Emphasise the transformative power of forgiveness to heal both personal wounds and communal divides",
+        "description": "Emphasise the transformative power of forgiveness to heal both personal wounds and communal divides. In Romanian tradition, \"Să iertăm, ca să fim iertați\" (Let us forgive so we may be forgiven) is a popular saying. Forgiveness is seen as a path to healing, just as Christ forgives even on the Cross. ",
         "category": "Ethics"
     },
     {
@@ -152,13 +152,13 @@
     {
         "id": 26,
         "title": "Spiritual Warfare",
-        "description": "Acknowledge the ongoing spiritual struggle against sin and evil",
+        "description": "Acknowledge the ongoing spiritual struggle against sin and evil. This is evident in the Romanian folk motif of the struggle against the balaur (dragon)—a symbol of the unseen battle against temptation (Ephesians 6:12).",
         "category": "Spirituality"
     },
     {
         "id": 27,
         "title": "Respect for Sacred Bonds",
-        "description": "Recognise the sanctity of relationships, such as marriage, parenthood, and friendship, and fostering their growth with care and commitment.",
+        "description": "Recognise the sanctity of relationships, such as marriage, parenthood, and friendship, and foster their growth with care and commitment. Orthodox theology sees marriage as a sacrament of unity, not a mere contract. Similarly, friendships are understood as spiritual brotherhoods, with God as the uniting third party.",
         "category": "Ethics"
     },
     {
@@ -170,31 +170,31 @@
     {
         "id": 29,
         "title": "Harmony Through Moderation",
-        "description": "Advocate for balance and restraint in all aspects of life.",
+        "description": "Advocate for balance and restraint in all aspects of life. The Orthodox path is one of balance—avoiding extremes in thought, action, and spirituality. Romanian wisdom warns against both \"lenea\" (laziness) and \"truda nesfârșită\" (endless toil).",
         "category": "Ethics"
     },
     {
         "id": 30,
         "title": "Devotion to Family",
-        "description": "Emphasize the central role of family as the foundation of moral and social life, deeply rooted in Romanian rural traditions.",
+        "description": "Emphasize the central role of family as the foundation of moral and social life. Family is considered a \"domestic church\". Romanian culture has long emphasized multi-generational households, where grandparents pass down both faith and wisdom.",
         "category": "Ethics"
     },
     {
         "id": 31,
         "title": "Faithful Commitment",
-        "description": "Foster loyalty and dedication in personal relationships, work, and spiritual practices.",
+        "description": "Foster loyalty and dedication in personal relationships, work, and spiritual practices. Loyalty (\"credință statornică\") is not only a human virtue but an imitation of God’s unwavering faithfulness (Deuteronomy 7:9).",
         "category": "Ethics"
     },
     {
         "id": 32,
         "title": "Faithful Endurance",
-        "description": "Emphasise perseverance in faith during hardships, inspired by Romania's history of struggle under various regimes.",
+        "description": "Emphasise perseverance in faith during hardships. Romania’s history of resilience—whether under Ottoman, Austro-Hungarian, or communist rule—mirrors the Orthodox call to patiently endure suffering (Luke 21:19).",
         "category": "Spirituality"
     },
     {
         "id": 33,
         "title": "Wisdom in Silence",
-        "description": "Valuing reflective silence as a source of inner peace and insight.",
+        "description": "Value reflective silence as a source of inner peace and insight. ",
         "category": "Intellect"
     }
 ]
