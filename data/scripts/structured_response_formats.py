@@ -60,3 +60,12 @@ class Principle(BaseModel):
   
 class Principles(BaseModel):
   principles: List[Principle]
+
+class PreferenceData(BaseModel):
+  prompt: str
+  chosen_response: str
+  rejected_response: str
+  reasoning: Optional[str]
+
+class PreferenceDataset(BaseModel):
+  preference_data: List[PreferenceData]
