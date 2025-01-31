@@ -16,11 +16,11 @@ import argparse
 parser = argparse.ArgumentParser(description='Generate SFT Dataset')
 parser.add_argument('--config', type=str, default='data/config/sa_config.yaml', help='path to the config file')
 parser.add_argument('--config-category', type=str, default='sft', help='type of data generation: red_team, sft, dpo')
-parser.add_argument('--model', type=str, default='gpt-4o-mini', help='model to use for generation: gpt-4o-mini, gpt-4o')
+parser.add_argument('--model', type=str, default='gpt-4o', help='model to use for generation: gpt-4o-mini, gpt-4o')
 parser.add_argument('--verbose', type=str, default=True, help='verbosity setting for openAI model: True/False')
 parser.add_argument('--output-file', type=str, default="data/datasets/sa/sft_dataset", help='output file name')
 parser.add_argument('--few-shot-samples', type=str, default='data/constitutions/anthropic_few_shot.json', help='include few shot examples')
-parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/sa/red_team_prompts_20250127-113940.json', help='latest red team prompts  file')
+parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/sa/red_team_prompts_gpt-4o_20250128-104840.json', help='latest red team prompts  file')
 parser.add_argument('--debug', type=str, default=False, help='debug')
 
 args = parser.parse_args()
@@ -46,7 +46,6 @@ rt_prompts = get_red_team_prompts(args.src_red_team_prompts)
 # Run to see the questions that the model generated
 # gen_prompts = GenPrompts(system_prompt=sft_config['SFT_SYSTEM_PROMPT'], user_prompt=sft_config['SFT_USER_PROMPT'])
 system_prompt = sft_config['SFT_SYSTEM_PROMPT']
-# user_prompt = sft_config['SFT_USER_PROMPT']
 
 # Few shot examples
 if args.few_shot_samples:
@@ -61,6 +60,7 @@ results = {}
 
 for id, principle in enumerate(principles):
     print(f"Generating SFT dataset for principle id {id}-{principle}: ")
+    counter = 0
     
     # there should be a list of red team prompts for each principle. 
     prompts = rt_prompts[str(id)]
@@ -79,7 +79,8 @@ for id, principle in enumerate(principles):
 
         response = generate_formatted_response(client=client, model=args.model, system=system_prompt, user=user_prompt, messages=None, verbose=args.verbose, response_format=SFTDataset)
         
-        results[id] = json.loads(response)["sft_data"]
+        results[f"{id}_{counter}"] = json.loads(response)["sft_data"]
+        counter += 1
         if args.debug: print(f"Model Response: {results[id]}")
 
 # save results to json file

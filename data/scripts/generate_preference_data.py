@@ -23,13 +23,13 @@ import argparse
 
 # Configure and parse args
 parser = argparse.ArgumentParser(description='Generate Preference Dataset')
-parser.add_argument('--config', type=str, default='/home/mariak/cai/data/config/sa_config.yaml', help='path to the config file')
+parser.add_argument('--config', type=str, default='data/config/sa_config.yaml', help='path to the config file')
 parser.add_argument('--config-category', type=str, default='pref', help='type of data generation: red_team, sft, pref')
-parser.add_argument('--model', type=str, default='gpt-4o-mini', help='model to use for generation: gpt-4o-mini, gpt-4o')
+parser.add_argument('--model', type=str, default='gpt-4o', help='model to use for generation: gpt-4o-mini, gpt-4o')
 parser.add_argument('--verbose', type=str, default=True, help='verbosity setting for openAI model: True/False')
-parser.add_argument('--output-file', type=str, default="/home/mariak/cai/data/datasets/sa/pref_dataset", help='output file base name')
+parser.add_argument('--output-file', type=str, default="data/datasets/sa/pref_dataset", help='output file base name')
 parser.add_argument('--few-shot-samples', type=str, default=None, help='include few shot examples')
-parser.add_argument('--src-red-team-prompts', type=str, default='/home/mariak/cai/data/datasets/sa/red_team_prompts_20250127-113940.json', help='latest red team prompts file')
+parser.add_argument('--src-red-team-prompts', type=str, default='data/datasets/sa/red_team_prompts_gpt-4o_20250128-104840.json', help='latest red team prompts file')
 parser.add_argument('--debug', type=str, default=False, help='debug')
 args = parser.parse_args()
 
@@ -60,11 +60,10 @@ if args.few_shot_samples:
 results = {}
 for principle_id, principle in enumerate(principles):
     print(f"Generating preference dataset for principle id {principle_id}-{principle}: ")
+    counter = 0
     
     prompts = rt_prompts[str(principle_id)]
     if args.debug: print(f"Number of prompts: {len(prompts)}")
-
-    if (principle_id == 2): break
     
     for rt_prompt in prompts:
         if args.few_shot_samples:
@@ -94,7 +93,8 @@ for principle_id, principle in enumerate(principles):
             response_format=PreferenceDataset
         )
         print(response)
-        results[principle_id] = json.loads(response)["preference_data"]
+        results[f"{principle_id}_{counter}"] = json.loads(response)["preference_data"]
+        counter += 1
         if args.debug: print(f"Model Response: {results[principle_id]}")
 
 # Save results to json file

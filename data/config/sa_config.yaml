@@ -1,5 +1,5 @@
 ---
-src_principles: '/home/mariak/cai/data/constitutions/revised_sac.json'
+src_principles: 'data/constitutions/revised_sac.json'
 
 # Configuration file for the red team
 red_team:
