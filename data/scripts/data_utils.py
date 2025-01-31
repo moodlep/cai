@@ -9,6 +9,7 @@ from dataclasses import dataclass, field, asdict, fields
 import random
 import time
 
+# ***** ARENA *****
 MODEL = "gpt-4o-mini"
 
 def retry_with_exponential_backoff(
@@ -119,6 +120,8 @@ class GenPrompts():
         user_prompt = apply_user_format(self.user_prompt.format(num_rtp_per_call=num_to_gen, principle=principle))
         return [system_prompt, user_prompt]
 
+# ***** ARENA *****
+
 
 # Read principles from a json file
 def get_principles_from_constitution(filename, print=False):
@@ -141,8 +144,6 @@ def get_config(filename, cfg_type='red_team'):
         config = yaml.safe_load(file)
         
     return config
-
-# print(get_config('data/config/sa_config.yaml'))    
 
 # read red team prompts from a json file
 def get_red_team_prompts(filename):

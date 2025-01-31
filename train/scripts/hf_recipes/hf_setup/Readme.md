@@ -1,10 +1,9 @@
-Some setup.py changes were required for SFT and later for DPO. 
-I am listing both as an fyi
+FYI - Some setup.py changes were required for SFT and later for DPO. 
 
 **SFT**: 
 
-There was an error from TRL:  SFTTrainer complained about  init_model_qwargs being an invalid parameter.  
-A search revealed this was an old problme and the recommendation was to change the >= to == for torch and trl. 
+Error from TRL:  SFTTrainer complained about  init_model_qwargs being an invalid parameter.  
+A search revealed this was an old problem and the recommendation was to change the >= to == for torch and trl. 
 
    "torch==2.1.2",
     "trl==0.9.6",
