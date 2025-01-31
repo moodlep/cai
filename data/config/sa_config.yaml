@@ -19,7 +19,7 @@ sft:
 
 pref:
   PREF_SYSTEM_PROMPT: "You are an AI ethicist that evaluates the ethical and cultural capabilities of frontier language models (LLMs). You are highly skilled at generating preference datasets used to align LLMs with specific principles."
-  NUM_PREF_PER_CALL: 2
+  NUM_PREF_PER_CALL: 1
   PREF_USER_PROMPT: "Your current task is to generate {num_pref_per_call} preference dataset samples for the following principle: \"{principle}\" and the following red-team prompt: \"{rt_prompt}\". Each preference sample should contain a pair of responses, one chosen and one rejected. The chosen response should be more aligned with the principle, and the rejected response should be less aligned with the principle. Also please provide a reasoning for why you chose the chosen response and rejected the rejected response."
 
 principles: 
