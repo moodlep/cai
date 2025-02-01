@@ -45,6 +45,7 @@ This repository contains recipes for training `smollm2` and `mistral` models on 
 
 - **Datasets**:  These scripts can produce a baseline CAI training run using the [HuggingFaceH4/cai-conversation-harmless](https://huggingface.co/datasets/HuggingFaceH4/cai-conversation-harmless?row=1) pre-generated SFT dataset from HuggingFace and the [Ultrachat_200k dataset](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k), also available on the HuggingFace hub.  
 
+- **Models**: To train on other models than Mistral or smolLM2, copy the recipes and adjust as needed. 
 
 ## Contact
 

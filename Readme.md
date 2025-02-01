@@ -16,17 +16,20 @@ A link to our project writeup will be provided shortly.
 ## Repository Contents
 
 ### Dataset Generation Process
+
+**Generating Datasets**: Use the scripts in the [data](https://github.com/moodlep/cai/tree/main/data) folder to generate and preprocess your own datasets. Upload datasets to the Hugging Face hub for training custom CAI models. 
+
+In the `data` folder you can find the files relevant to this project including: 
+
 - **Constitutions**: Various constitutions (sets of principles) used for training and evaluation.
 - **Datasets**: Datasets required for training and testing the models, including red teaming, SFT and preference datasets.
-- **Scripts**: Scripts for generating and processing datasets.
+- **Scripts**: Python scripts for generating and processing datasets.
 
 ### Training Recipes
+
+**Training Models**: Follow the instructions in the [train](https://github.com/moodlep/cai/tree/main/train) folder to train `smollm2` and `mistral` models using pre-existing datasets on the HuggingFace hub or datasets using the datasets generated above. 
+
 - **Train Folder**: Contains recipes for training `smollm2` and `mistral` models on a single GPU server using PEFT (QLoRA) for the Constitutional AI process, that includes multiple training steps including a Supervised Fine-Tuning (SFT) and a preference training (DPO) step.
-
-
-### Usage
-1. **Training Models**: Follow the instructions in the [train](https://github.com/moodlep/cai/tree/main/train) folder to train `smollm2` and `mistral` models using pre-existing datasets on the HuggingFace hub. 
-2. **Generating Datasets**: Use the scripts in the [data](https://github.com/moodlep/cai/tree/main/data) folder to generate and preprocess your own datasets. Upload datasets to the hub for training custom CAI models. 
 
 
 ## License
