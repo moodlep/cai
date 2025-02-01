@@ -9,28 +9,25 @@ Within the broader Machine Ethics (ME) discussion, most value alignment work foc
 
 At the same time, if carefully developed and deployed, AI systems could provide interactive repositories of underrepresented perspectives. We sought to evaluate how LLMs post-trained on principles reflecting different countries and groups compared to existing frontier models. We produced a set of synthetic datasets for aligning models with principles inspired from the South African and Romanian cultures respectively. 
 
-After analysing the datasets generated, we observe that in some cases GPT-4o demonstrates a nuanced understanding of the principles used while other principles reveal a clear knowledge gap. Our writeup discusses whether different countries should fine-tune their own models versus educating their citizens about the behaviour of frontier models and best practices for using them. The link will be provided shortly. 
+After analysing the datasets generated, we observe that in some cases GPT-4o demonstrates a nuanced understanding of the principles used while other principles reveal a clear knowledge gap. Our writeup discusses whether different countries should fine-tune their own models versus educating their citizens about the behaviour of frontier models and best practices for using them. 
+
+A link to our project writeup will be provided shortly. 
 
 ## Repository Contents
 
-### Training Recipes
-- **Train Folder**: Contains recipes for training `smollm2` and `mistral` models on a single GPU server using PEFT (QLoRA).
-
-### Data
-- **Constitutions**: Various constitutions used for training and evaluation.
-- **Datasets**: Datasets required for training and testing the models.
+### Dataset Generation Process
+- **Constitutions**: Various constitutions (sets of principles) used for training and evaluation.
+- **Datasets**: Datasets required for training and testing the models, including red teaming, SFT and preference datasets.
 - **Scripts**: Scripts for generating and processing datasets.
+
+### Training Recipes
+- **Train Folder**: Contains recipes for training `smollm2` and `mistral` models on a single GPU server using PEFT (QLoRA) for the Constitutional AI process, that includes multiple training steps including a Supervised Fine-Tuning (SFT) and a preference training (DPO) step.
 
 
 ### Usage
-1. **Training Models**: Follow the instructions in the [train](https://github.com/moodlep/cai/tree/main/train) folder to train `smollm2` and `mistral` models.
-2. **Generating Datasets**: Use the scripts in the [data](https://github.com/moodlep/cai/tree/main/data) folder to generate and preprocess datasets.
+1. **Training Models**: Follow the instructions in the [train](https://github.com/moodlep/cai/tree/main/train) folder to train `smollm2` and `mistral` models using pre-existing datasets on the HuggingFace hub. 
+2. **Generating Datasets**: Use the scripts in the [data](https://github.com/moodlep/cai/tree/main/data) folder to generate and preprocess your own datasets. Upload datasets to the hub for training custom CAI models. 
 
-### Configuration
-- Configuration files for training and data generation are located in the `config` folder. Modify these files as needed to suit your requirements.
-
-## Contributing
-We welcome contributions! Please read our Contributing Guidelines for more details.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
@@ -39,6 +36,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 For any questions or inquiries, please contact us.
 
 ## Acknowledgements
-We would like to thank the [Blue Dot AI Safety Fundamentals](https://aisafetyfundamentals.com/) team for their support and guidance.
-We would also like to acknowledge [HuggingFace](https://huggingface.co/) for their tireless production of libraries, courses and documentation and 
-[ARENA](https://github.com/callummcdougall/ARENA_3.0) for their excellent tutorials
+We would like to thank the [Blue Dot AI Safety Fundamentals](https://aisafetyfundamentals.com/) team for their exceptional course, support and guidance.
+
+We would also like to acknowledge [HuggingFace](https://huggingface.co/) for their tireless production of libraries, courses and documentation and the 
+[ARENA](https://github.com/callummcdougall/ARENA_3.0) project for their excellent tutorials. 
