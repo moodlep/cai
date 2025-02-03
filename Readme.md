@@ -11,7 +11,7 @@ At the same time, if carefully developed and deployed, AI systems could provide 
 
 After analysing the datasets generated, we observe that in some cases GPT-4o demonstrates a nuanced understanding of the principles used while other principles reveal a clear knowledge gap. Our writeup discusses whether different countries should fine-tune their own models versus educating their citizens about the behaviour of frontier models and best practices for using them. 
 
-A link to our project writeup will be provided shortly. 
+Here is a link to our [project writeup](https://docs.google.com/document/d/1441OXG_tZdbLY8ZNpsNSJsv9iDx2Nql77ZnryVleCL0/edit?usp=sharing); please note this is a living document as we continue to work on this project. 
 
 ## Repository Contents
 
@@ -31,6 +31,7 @@ In the `data` folder you can find the files relevant to this project including:
 
 - **Train Folder**: Contains recipes for training `smollm2` and `mistral` models on a single GPU server using PEFT (QLoRA) for the Constitutional AI process, that includes multiple training steps including a Supervised Fine-Tuning (SFT) and a preference training (DPO) step.
 
+For a more details on how to get started using Hugging Face's alignment-handbook refer to our [blog post](https://emergent-behaviour.blogspot.com/2025/02/training-constitutional-ai-model-using.html).  
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
